@@ -5,6 +5,9 @@ set -e
 export HOME="/home/mike"
 export PATH="/usr/bin:/bin:/usr/local/bin:$HOME/.local/bin"
 
+# where passwords set
+source "$HOME/.bashrc"
+
 #Usage: scrape_vacasa.py <onlyFuture> <logPages> [<headless>]
 REPO_DIR="$HOME/2576-lwb"
 SCRAPE_COMMAND="$HOME/vacasa/venv/bin/python $HOME/vacasa/scrape_vacasa.py true false true"
